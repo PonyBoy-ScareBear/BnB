@@ -1,0 +1,54 @@
+# RandoStuffs
+# -----------
+
+# Python Libraries & Packages
+import pandas as pd
+import random
+
+# RandoStuffs Table
+RandoStuffs_Table = pd.read_csv(r'C:\Users\tmush\OneDrive\Documents\BnB\RandoStuffs.csv')
+RandoStuffs_Table['Roll'] = range(1,101)
+RandoStuffs_Table['Name'] = ['Whoops','Whoops','Whoops','Whoops','Whoops','Robber','Robber','Robber','Robber','Robber','Warcry','Warcry','Warcry','Warcry','Warcry','Retured','Retured','Retured','Retured','Retured','Adhesion','Adhesion','Adhesion','Adhesion','Adhesion','Rogue','Rogue','Rogue','Rogue','Rogue','Attention!','Attention!','Attention!','Attention!','Attention!','Possessed','Possessed','Possessed','Possessed','Possessed','Ignite','Ignite','Ignite','Ignite','Ignite','Sneaky','Sneaky','Sneaky','Sneaky','Sneaky','Clear Shot','Clear Shot','Clear Shot','Clear Shot','Clear Shot','Upgrade','Upgrade','Upgrade','Upgrade','Upgrade','Change Places','Change Places','Change Places','Change Places','Change Places','BOOM!','BOOM!','BOOM!','BOOM!','BOOM!','BOOM!','BOOM!','BOOM!','BOOM!','BOOM!','BOOM!','BOOM!','BOOM!','BOOM!','BOOM!','Jam','Jam','Jam','Jam','Jam','Bring the House Down','Bring the House Down','Bring the House Down','Bring the House Down','Bring the House Down','Malfunction','Malfunction','Malfunction','Malfunction','Malfunction','Mutate','Domino','Rain','Problems','Divine']
+RandoStuffs_Table['Description'] = ['You trip and land on another player, you clumso','You trip and land on another player, you clumso','You trip and land on another player, you clumso','You trip and land on another player, you clumso','You trip and land on another player, you clumso','Somebody steals somethin off you','Somebody steals somethin off you','Somebody steals somethin off you','Somebody steals somethin off you','Somebody steals somethin off you','An enemy makes a really good speech and even you are like, "damn, maybe they are the good guys here"','An enemy makes a really good speech and even you are like, "damn, maybe they are the good guys here"','An enemy makes a really good speech and even you are like, "damn, maybe they are the good guys here"','An enemy makes a really good speech and even you are like, "damn, maybe they are the good guys here"','An enemy makes a really good speech and even you are like, "damn, maybe they are the good guys here"','Some of the damage you just put on a baddie gets bounced back at you','Some of the damage you just put on a baddie gets bounced back at you','Some of the damage you just put on a baddie gets bounced back at you','Some of the damage you just put on a baddie gets bounced back at you','Some of the damage you just put on a baddie gets bounced back at you','Somehow you get stuck to something ew nice ew','Somehow you get stuck to something ew nice ew','Somehow you get stuck to something ew nice ew','Somehow you get stuck to something ew nice ew','Somehow you get stuck to something ew nice ew','An enemy does something totally unexpected and random, like propose marriage or kill their boss or drink acid or somethin','An enemy does something totally unexpected and random, like propose marriage or kill their boss or drink acid or somethin','An enemy does something totally unexpected and random, like propose marriage or kill their boss or drink acid or somethin','An enemy does something totally unexpected and random, like propose marriage or kill their boss or drink acid or somethin','An enemy does something totally unexpected and random, like propose marriage or kill their boss or drink acid or somethin','Somethin happens that distracts you -- a baby start crying, a dog licks your leg, somebody taps you on the shoulder','Somethin happens that distracts you -- a baby start crying, a dog licks your leg, somebody taps you on the shoulder','Somethin happens that distracts you -- a baby start crying, a dog licks your leg, somebody taps you on the shoulder','Somethin happens that distracts you -- a baby start crying, a dog licks your leg, somebody taps you on the shoulder','Somethin happens that distracts you -- a baby start crying, a dog licks your leg, somebody taps you on the shoulder','A ghostie takes over one of the baddos','A ghostie takes over one of the baddos','A ghostie takes over one of the baddos','A ghostie takes over one of the baddos','A ghostie takes over one of the baddos','Somebody is on fire. Why? IDK you figure it out.','Somebody is on fire. Why? IDK you figure it out.','Somebody is on fire. Why? IDK you figure it out.','Somebody is on fire. Why? IDK you figure it out.','Somebody is on fire. Why? IDK you figure it out.','An enemy becomes cloaked and basically invisible. Obv do this to one of your scarieer enemies so your players are like oh noooo','An enemy becomes cloaked and basically invisible. Obv do this to one of your scarieer enemies so your players are like oh noooo','An enemy becomes cloaked and basically invisible. Obv do this to one of your scarieer enemies so your players are like oh noooo','An enemy becomes cloaked and basically invisible. Obv do this to one of your scarieer enemies so your players are like oh noooo','An enemy becomes cloaked and basically invisible. Obv do this to one of your scarieer enemies so your players are like oh noooo','Something gets in front of the gun of the player and blocks their shot like a pro b-ball player','Something gets in front of the gun of the player and blocks their shot like a pro b-ball player','Something gets in front of the gun of the player and blocks their shot like a pro b-ball player','Something gets in front of the gun of the player and blocks their shot like a pro b-ball player','Something gets in front of the gun of the player and blocks their shot like a pro b-ball player','A baddo gets a better gun','A baddo gets a better gun','A baddo gets a better gun','A baddo gets a better gun','A baddo gets a better gun','Take the battle order, put it down, flip it, and reverse it','Take the battle order, put it down, flip it, and reverse it','Take the battle order, put it down, flip it, and reverse it','Take the battle order, put it down, flip it, and reverse it','Take the battle order, put it down, flip it, and reverse it','Something f*cking explodes like KA-BLAM!','Something f*cking explodes like KA-BLAM!','Something f*cking explodes like KA-BLAM!','Something f*cking explodes like KA-BLAM!','Something f*cking explodes like KA-BLAM!','Something f*cking explodes like KA-BLAM!','Something f*cking explodes like KA-BLAM!','Something f*cking explodes like KA-BLAM!','Something f*cking explodes like KA-BLAM!','Something f*cking explodes like KA-BLAM!','Something f*cking explodes like KA-BLAM!','Something f*cking explodes like KA-BLAM!','Something f*cking explodes like KA-BLAM!','Something f*cking explodes like KA-BLAM!','Something f*cking explodes like KA-BLAM!','Your gun fills with jelly what','Your gun fills with jelly what','Your gun fills with jelly what','Your gun fills with jelly what','Your gun fills with jelly what','A nearby building crumbles, regardless of if something important is in it or not. Probo better if there is something important in there tbh','A nearby building crumbles, regardless of if something important is in it or not. Probo better if there is something important in there tbh','A nearby building crumbles, regardless of if something important is in it or not. Probo better if there is something important in there tbh','A nearby building crumbles, regardless of if something important is in it or not. Probo better if there is something important in there tbh','A nearby building crumbles, regardless of if something important is in it or not. Probo better if there is something important in there tbh','A players shield depletes so they feel naked','A players shield depletes so they feel naked','A players shield depletes so they feel naked','A players shield depletes so they feel naked','A players shield depletes so they feel naked','An enemy becomes a badass, maybe cause they get rull angry','A bunch of real unlucky, real unlikely stuff happens that sorta chain reacts and makes everything really bad for everyone','A loot chest falls from somewhere onto something or somebody. Up to you if you wanna explain why. If not, just be like it rains chests sometimes, deal','More baddos show up','Something miraculous (or insane) happens, either to the baddies or to your players. It should totally change whatever is going on, and ideally be hilarious.']
+
+# RandoStuffs Operation
+print('RandoStuffs:')
+print('------------')
+DiceRoll = random.randint(1, RandoStuffs_Table['Roll'].iloc[-1])
+print('Dice Roll =',DiceRoll)
+print('')
+if DiceRoll>=6 and DiceRoll<=10:
+    WHO_Table = pd.DataFrame()
+    WHO_Table['Roll'] = [1,2,3,4]
+    WHO_Table['Who?'] = ['PC','PC','NPC','Baddy']
+    D4 = random.randint(1, WHO_Table['Roll'].iloc[-1])
+    print(RandoStuffs_Table.iloc[DiceRoll-1,1])
+    print('A',WHO_Table.iloc[D4-1,1],'steals something off of you.')
+elif DiceRoll>=16 and DiceRoll<=20:
+    Percent_Table = pd.DataFrame()
+    Percent_Table['Roll'] = [1,2,3,4,5,6,7]
+    Percent_Table['Percent?'] = [10,25,50,60,70,80,90]
+    D4 = random.randint(1, Percent_Table['Roll'].iloc[-1])
+    print(RandoStuffs_Table.iloc[DiceRoll-1,1])
+    print(Percent_Table.iloc[D4-1,1],'percent of the damage you just put on a baddie gets bounced back at you.')
+elif DiceRoll>=41 and DiceRoll<=45:
+    WHO_Table = pd.DataFrame()
+    WHO_Table['Roll'] = [1,2,3,4]
+    WHO_Table['Who?'] = ['player','player','NPC','baddie']
+    Dice = random.randint(1, WHO_Table['Roll'].iloc[-1])
+    print(RandoStuffs_Table.iloc[DiceRoll-1,1])
+    print('A',WHO_Table.iloc[Dice-1,1],'is on fire. Why? IDK you figure it out.')
+elif DiceRoll==96:
+    print(RandoStuffs_Table.iloc[DiceRoll-1,1])
+    Badass_Modifier = pd.DataFrame()
+    Badass_Modifier['Roll'] = range(1,11)
+    Badass_Modifier['Modifier'] = ['TOUGH','FIRE','ELECTRIC','RAGING','CORROSIVE','EXPLOSIVE','FERAL','RAD','FROZEN','CHUBBY']
+    Badass_Modifier['Description'] = ['Takes a max of 10 damage from each attack','Deals and is immune to incendiary damage','Deals and is immune to shock damage','Deals double damage','Deals and is immune to corrosive damage','Deals and is immune to explosive damage','Gains extra movement each turn','Deals and is immune to radiation damage','Deals and is immune to cryo damage','Triple Health/Armor instead (always drops legendary item)']
+    DiceRoll = random.randint(1, Badass_Modifier['Roll'].iloc[-1])
+    print('An enemy becomes a',Badass_Modifier.iloc[DiceRoll-1,1],'badass, maybe because they get rull angry')
+    print('')
+    print('Badass Modifier:',Badass_Modifier.iloc[DiceRoll-1,2])
+else:
+    print(RandoStuffs_Table.iloc[DiceRoll-1,1])
+    print(RandoStuffs_Table.iloc[DiceRoll-1,2])
+
