@@ -20,10 +20,10 @@ Legendary = Large + random.randint(1,6)
 Cache_Table = pd.DataFrame()
 Cache_Table['Roll'] = range(1,37)
 Cache_Table['Item(s)'] = [
-    '30g','Common Health Potion','Common Shield Potion',
-    '30g + Common Health Potion','30g + Common Shield Potion','50g + Random Potion',
+    '30g','Common Health Potion (1d8)','Common Shield Potion (1d8)',
+    '30g + Common Health Potion (1d8)','30g + Common Shield Potion (1d8)','50g + Random Potion',
     '30g + Uncommon Health Potion','30g + Uncommon Shield Potion','50g + Uncommon Health Potion',
-    '50g + Uncommon Shield Potion','50g + Common Gun (Random)','80g + Common Health Potion',
+    '50g + Uncommon Shield Potion','50g + Common Gun (Random)','80g + Common Health Potion (1d8)',
     '80g + Uncommon Health Potion + Random Potion','80g + Uncommon Shield Potion + Grenades (2)','80g + Random Potions (2) + Common Relic',
     '80g + Uncommon Gun (Random) + Grenades (2)','80g + Uncommon Gun (Random) + Uncommon Health Potion','100g + Grenades (2) + Random Potions (2)',
     '100g + Uncommon Gun (Random) + Random Potion','100g + Rare Health Potions (2) + Grenade Mod','100g + Rare Shield Potions (2) + Grenade Mod',
@@ -49,6 +49,6 @@ def Cache(Cache_size):
         Cache_Item = Cache_Table['Item(s)'].iloc[Large]
 
     else:
-        Cache_Item = Cache_Table['Item(s)'].iloc[Legendary]   
-
+        Cache_Item = Cache_Table['Item(s)'].iloc[Legendary]
+    
     print('{} Cache: {}'.format(Cache_size,Cache_Item))
